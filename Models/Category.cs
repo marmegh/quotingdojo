@@ -1,12 +1,16 @@
 using System;
+using System.Collections.Generic;
 
 namespace quotingdojo.Models
 {
     public class Category : BaseEntity
     {
-        public int quoteid { get; set; }
-        public string quote { get; set; }
-        public int metaid { get; set; }
-        public int authorid { get; set; }
+        public int categoryid { get; set; }
+        public string name { get; set; }
+        public List<QuoteCategory> qcats { get; set; }
+        public Category()
+        {
+            qcats = new List<QuoteCategory>();
+        }
     }
 }

@@ -2,14 +2,27 @@
     <h1>
         Hi! :D
     </h1>
-    <form action="" method = "post">
-        <input type="text" name = "author_name">
+    <h4>Add an Author</h4>
+    <form action="author/create" method = "post">
+        <input type="text" name = "name">
         <input type="submit" value = "Authorify!">
     </form>
-    <ul>
-        @foreach(var author in @ViewBag.authors)
-        {
-            <li>@author.name</li>
-        }
-    </ul>
+    <h4>Add a Quote</h4>
+    <form action="quote/create" method = "post">
+        Quote: <input type="text" name="quote">
+        Meta: <input type="text" name="meta">
+        <select name="authorid">
+            @foreach(var author in @ViewBag.authors)
+            {
+                <option value=@author.authorid>@author.name</option>
+            }       
+        </select>
+        <select name="categoryid">
+            @foreach(var cat in @ViewBag.cats)
+            {
+                <option value=@cat.categoryid>@cat.name</option>
+            }       
+        </select>
+        <input type="submit" value="Add Quote">
+    </form>
 </main>

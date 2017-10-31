@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace quotingdojo.Models
 {
@@ -6,5 +7,10 @@ namespace quotingdojo.Models
     {
         public int authorid { get; set; }
         public string name { get; set; }
+        public List<Quote> quotes { get; set; }
+        public Author()
+        {
+            quotes = new List<Quote>();
+        }
     }
 }
