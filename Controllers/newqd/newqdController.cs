@@ -22,6 +22,7 @@ namespace quotingdojo.Controllers
         {
             ViewBag.authors = _context.authors.ToList();
             ViewBag.cats = _context.categories.ToList();
+            ViewBag.quotes = _context.quotes.ToList();
             return View();
 
         }
@@ -50,6 +51,30 @@ namespace quotingdojo.Controllers
         {
             if(ModelState.IsValid)
             {
+                //meta
+                Meta newMeta = new Meta();
+                newMeta.notes = incoming.meta;
+                _context.metas.Add(newMeta);
+                _context.SaveChanges();
+                //reassign to db instance of meta
+                newMeta = _context.metas.Last();
+                //quote
+                Quote newQuote = new Quote();
+                Author auth = _context.authors.SingleOrDefault(Author=>Author.authorid == incoming.authorid);
+                newQuote.author = auth;
+                newQuote.quote = incoming.quote;
+                newQuote.meta = newMeta;
+                _context.quotes.Add(newQuote);
+                _context.SaveChanges();
+                // reassign newQuote to db instance
+                newQuote = _context.quotes.Last();
+                //quotecats
+                QuoteCategory newQcat = new QuoteCategory();
+                Category cat = _context.categories.SingleOrDefault(Category=>Category.categoryid == incoming.categoryid);
+                newQcat.category = cat;
+                newQcat.quote = newQuote;
+                _context.quotecategories.Add(newQcat);
+                _context.SaveChanges();                
                 System.Console.WriteLine("Goodness!");
             }
             else

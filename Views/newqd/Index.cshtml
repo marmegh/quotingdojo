@@ -25,4 +25,9 @@
         </select>
         <input type="submit" value="Add Quote">
     </form>
+    <h2>Quotes</h2>
+    @foreach(var quote in @ViewBag.quotes)
+    {
+        <p>@quote.quote - @quote.author.name</p>
+    }
 </main>

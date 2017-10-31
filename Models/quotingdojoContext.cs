@@ -9,6 +9,6 @@ namespace quotingdojo.Models
         public DbSet<Category> categories { get; set; }
         public DbSet<Meta> metas { get; set; }
         public DbSet<Quote> quotes { get; set; }
-        public DbSet<QuoteCategory> qcs { get; set; }
+        public DbSet<QuoteCategory> quotecategories { get; set; }
     }
 }
