@@ -1,0 +1,10 @@
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\obj\Debug\netcoreapp2.0\quotingdojo.csproj.CoreCompileInputs.cache
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\obj\Debug\netcoreapp2.0\quotingdojo.AssemblyInfoInputs.cache
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\obj\Debug\netcoreapp2.0\quotingdojo.AssemblyInfo.cs
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\bin\Debug\netcoreapp2.0\quotingdojo.deps.json
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\bin\Debug\netcoreapp2.0\quotingdojo.runtimeconfig.json
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\bin\Debug\netcoreapp2.0\quotingdojo.runtimeconfig.dev.json
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\bin\Debug\netcoreapp2.0\quotingdojo.dll
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\bin\Debug\netcoreapp2.0\quotingdojo.pdb
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\obj\Debug\netcoreapp2.0\quotingdojo.dll
+C:\Users\marym\Documents\Dojo\netCore\entity\quotingdojo\obj\Debug\netcoreapp2.0\quotingdojo.pdb
