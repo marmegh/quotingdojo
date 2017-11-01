@@ -5,7 +5,7 @@ namespace quotingdojo.Models
     public class AuthorViewModel : BaseEntity
     {
         [Required]
-        [MinLength(6)]
+        [MinLength(3)]
         public string name { get; set; }
     }
 }
